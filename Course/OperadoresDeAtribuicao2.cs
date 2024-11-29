@@ -8,7 +8,7 @@ namespace Course
 {
      class OperadoresDeAtribuicao2
     {
-        static void Main(string[] args)
+        static void OperadorDeAtribuicao(string[] args)
         {
             int a = 10;
             a++; // a ++ soma pra virar 11

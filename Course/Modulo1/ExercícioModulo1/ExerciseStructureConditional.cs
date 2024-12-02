@@ -8,7 +8,7 @@ namespace Course.Modulo1.ExercícioModulo1
 {
     internal class ExerciseStructureConditional
     {
-        static void Main(string[] args)
+        static void ExerciseMultiples(string[] args)
         {
             /* EXERCÍCIO 1 RESOLVIDO = IZZI
             int inteiro = int.Parse(Console.ReadLine());

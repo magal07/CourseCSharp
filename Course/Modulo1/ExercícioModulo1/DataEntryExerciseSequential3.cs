@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Course.Modulo1.ExercícioModulo1
 {
-    class DataEbtryExerciseSequential3
+    class DataEntryExerciseSequential3
     {
         static void ExerciseDiferenca(string[] args)
         {

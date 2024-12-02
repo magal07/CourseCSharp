@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Course
+namespace Course.Modulo1.Conteudo
 {
-     class ConversaoImplicitaECasting
+    class ConversaoImplicitaECasting
     {
         static void ConvertImplicityOrCasting(string[] args)
         {
@@ -17,10 +17,10 @@ namespace Course
 
             int b = 2;
 
-            double resultado = (double) 5 / 2;
+            double resultado = (double)5 / 2;
 
             Console.WriteLine(resultado);
-                
+
         }
     }
 }

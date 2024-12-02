@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Course
+namespace Course.Modulo1.Conteudo
 
 {
     class Program
     {
-        static void Exercico1 (string[] args)
+        static void Exercico1(string[] args)
         {
 
             bool completo = false;

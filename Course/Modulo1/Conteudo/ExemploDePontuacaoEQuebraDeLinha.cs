@@ -2,7 +2,7 @@
 using System.Globalization;
 
 
-namespace Program
+namespace Course.Modulo1.Conteudo
 {
     class Course
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Course
+namespace Course.Modulo1.Conteudo
 {
     class OperadoresAritimeticos
     {

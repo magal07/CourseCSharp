@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Course
+namespace Course.Modulo1.Conteudo
 {
-     class OperadoresDeAtribuicao
+    class OperadoresDeAtribuicao
     {
         static void OperadoresAtribuicao(string[] args)
         {
@@ -20,7 +20,7 @@ namespace Course
             Console.WriteLine(a);
 
             string s = "ABC";
-            s += "DEF"; 
+            s += "DEF";
 
             Console.WriteLine(s);
 

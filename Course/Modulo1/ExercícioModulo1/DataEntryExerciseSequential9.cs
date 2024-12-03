@@ -16,7 +16,7 @@ namespace Course.Modulo1.ExercícioModulo1
             double x = double.Parse(valores[0], CultureInfo.InvariantCulture);
             double y = double.Parse(valores[1], CultureInfo.InvariantCulture);
 
-            if (x == 0.0 && y == 0.0)
+            if (x == 0.0 && y == 0.0) // definindo origem 
             {
                 Console.WriteLine("Origem");
             }

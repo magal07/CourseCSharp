@@ -9,7 +9,7 @@ namespace Course.Modulo1.ExercícioModulo1
 {
     internal class ExerciseIRPF
     {
-        static void Main(string[] args)
+        static void ExerciseSalaryThisImpost(string[] args)
         {
 
             double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);

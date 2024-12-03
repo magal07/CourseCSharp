@@ -1,0 +1,16 @@
+﻿ANOTAÇÕES 
+
+
+
+Debuggin com VS 
+
+TECLAS: 
+
+F9 - macar/desmarcar breakpoint
+F5 - iniciar/continuar o debug
+F10 - Executar um passo (pular função)
+F11 - executar um passo (entrar na função)
+SHIT + F11 - sair do método em execução
+SHIFT + F5 - parar debug
+
+

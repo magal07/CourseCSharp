@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Course.Modulo1.Conteudo
 {
-    internal class Sintaxe
+    internal class SintaxeEMetodo
     {
-        static void Main(string[] args)
+        static void MetodoESintaxe(string[] args)
         {
             Console.WriteLine("Digite um número: ");
 
@@ -17,7 +17,7 @@ namespace Course.Modulo1.Conteudo
             int n2 = int.Parse(Console.ReadLine());
             int n3 = int.Parse(Console.ReadLine());
 
-/* RESUMO DE LÓGICA EM FUNÇÃO, CLIQUE AQUI
+                    /* RESUMO DE LÓGICA EM FUNÇÃO, CLIQUE AQUI
 
             if (n1 > n2 && n1 > n3)
             {
@@ -39,26 +39,32 @@ namespace Course.Modulo1.Conteudo
 
             Console.WriteLine("Maior = " + resultado); 
         }
-        // CRIAÇÃO DO MÉTODO 
-        static int Maior(int a, int b, int c)
-        {
-            int m; // MAIOR
+                             // CRIAÇÃO DO MÉTODO MAIOR
 
+
+            static int Maior(int a, int b, int c)
+        {
+
+            
             if (a > b && a > c)
             {
-                m = a;
+
+                return a;
+                Console.WriteLine("n1 é o maior!");
             }
 
             else if (b > c)
-            {
-                m = b;
-            }
+                {
+
+                return b;
+                Console.WriteLine("n2 é o maior!");
+                }
+
             else
             {
-                m= c;
+                return c;
+                Console.WriteLine("n3 é o maior!");
             }
-
-            return m;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Course.Modulo1.Conteudo
 {
     internal class While // while = enquanto - se a condição do while for verdadeira ele executa e volta, se for falsa ele pula fora
     {
-        static void Main(string[] args)
+        static void WhileEnquanto(string[] args)
         {
                 Console.Write("Digite um número : ");
                 double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);

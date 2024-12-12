@@ -10,13 +10,12 @@ namespace Course.Modulo1.ExercícioModulo1
     internal class ExerciseCoordenadas
     {
 
-        static void Main(string[] args)
+        static void ExerciseCartesianoCoordenadas(string[] args)
         {
-
             string[] valores = Console.ReadLine().Split(' ');
 
-            double x = double.Parse(valores[0], CultureInfo.InvariantCulture);
-            double y = double.Parse(valores[1], CultureInfo.InvariantCulture);
+            int x = int.Parse(valores[0]);
+            int y = int.Parse(valores[1]);
 
             while (x != 0 && y != 0)
             {
@@ -28,18 +27,20 @@ namespace Course.Modulo1.ExercícioModulo1
                 {
                     Console.WriteLine("segundo");
                 }
-                else if (x < 0 && y < 0)
+                else if (x < 0 && y <0)
                 {
                     Console.WriteLine("terceiro");
                 }
                 else
                 {
-                    Console.WriteLine("quarto");
+                    Console.WriteLine("quarto"); 
                 }
+
                 valores = Console.ReadLine().Split(' ');
                 x = int.Parse(valores[0]);
-                y = int.Parse(valores[1]);
+                y = int.Parse(valores[1]);  
             }
+
         }
     }
 }

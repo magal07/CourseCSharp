@@ -14,3 +14,4 @@ SHIT + F11 - sair do método em execução
 SHIFT + F5 - parar debug
 
 
+for = para 

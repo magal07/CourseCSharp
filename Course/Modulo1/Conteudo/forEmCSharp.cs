@@ -9,7 +9,7 @@ namespace Course.Modulo1.Conteudo
 {
     class forEmCSharp
     {
-        static void Main(string[] args)
+        static void forStudy(string[] args)
         {
 
             Console.Write("Quantos números inteiros você vai digitar? ");
@@ -17,14 +17,14 @@ namespace Course.Modulo1.Conteudo
             int N = int.Parse(Console.ReadLine());
 
             int soma = 0;
-
-            for (int i = 1; i <= N; i++)
+                    
+            for (int i = 1; i <= N; i++) // i++ incrementando o valor da variável 
             {
                 Console.WriteLine("Valor #{0}", i);
                 int valor = int.Parse(Console.ReadLine());
                 soma += valor;
             }
-            Console.WriteLine("Soma = ", soma);
+            Console.WriteLine("Soma = " + soma);
         }
     }
 }

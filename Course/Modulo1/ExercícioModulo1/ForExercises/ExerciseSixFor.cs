@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Course.Modulo1.ExercícioModulo1
+namespace Course.Modulo1.ExercícioModulo1.ForExercises
 {
     internal class ExerciseSixFor
     {
-        static void ExerciseSixFor(string[] args)
+        static void Exercise6For(string[] args)
         {
 
             int n = int.Parse(Console.ReadLine());

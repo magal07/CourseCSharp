@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Course.Modulo1.ExercícioModulo1
+namespace Course.Modulo1.ExercícioModulo1.ForExercises
 {
     internal class ExerciseFiveFor
     {
@@ -12,11 +12,11 @@ namespace Course.Modulo1.ExercícioModulo1
         {
             {
 
-                int n = int.Parse(Console.ReadLine());  
+                int n = int.Parse(Console.ReadLine());
 
                 for (int i = 1; i <= n; i++)
                 {
-                    if(n % i == 0)
+                    if (n % i == 0)
                     {
                         Console.WriteLine("Divisores: " + i);
                     }

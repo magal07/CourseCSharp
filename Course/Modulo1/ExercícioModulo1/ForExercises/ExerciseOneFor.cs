@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Course.Modulo1.ExercícioModulo1
+namespace Course.Modulo1.ExercícioModulo1.ForExercises
 {
     internal class ExerciseOneFor
     {
@@ -14,7 +14,7 @@ namespace Course.Modulo1.ExercícioModulo1
 
             for (int i = 1; i <= x; i++)
             {
-                if(i % 2 != 0)
+                if (i % 2 != 0) // Definindo para que seja par
                 {
                     Console.WriteLine(i);
                 }

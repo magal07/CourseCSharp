@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 
-namespace Course.Modulo1.ExercícioModulo1
+namespace Course.Modulo1.ExercícioModulo1.ForExercises
 {
     internal class ExerciseFourFor
     {
@@ -20,8 +20,8 @@ namespace Course.Modulo1.ExercícioModulo1
                 string[] line = Console.ReadLine().Split(' ');
                 int x = int.Parse(line[0]);
                 int y = int.Parse(line[1]);
-                
-                if(y == 0)
+
+                if (y == 0)
                 {
                     Console.WriteLine("divisao impossível");
                 }
@@ -30,15 +30,15 @@ namespace Course.Modulo1.ExercícioModulo1
                     double div = (double)x / y;
 
                     Console.WriteLine(div.ToString("F1", CultureInfo.InvariantCulture));
-                /*
-                //if (y == 0)
-                //{
-                //    Console.WriteLine("divisao impossivel");
-                //}
-                //else
-                //{
-                //    double div = (double)x / y;
-                //    Console.WriteLine(div.ToString("F1", CultureInfo.InvariantCulture); */ 
+                    /*
+                    //if (y == 0)
+                    //{
+                    //    Console.WriteLine("divisao impossivel");
+                    //}
+                    //else
+                    //{
+                    //    double div = (double)x / y;
+                    //    Console.WriteLine(div.ToString("F1", CultureInfo.InvariantCulture); */
                 }
             }
         }

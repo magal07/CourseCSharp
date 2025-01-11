@@ -32,7 +32,7 @@ namespace Course.Modulo2
             y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double areaY = y.Area();
+            double areaY = y.Area(); // método!
 
 
             Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));

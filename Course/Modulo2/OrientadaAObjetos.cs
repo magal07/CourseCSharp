@@ -4,33 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
+using Course.Metodos;
 namespace Course.Modulo2
 {
-     class OrientadaAObjetos
+    class OrientadaAObjetos
     {
         static void Main(string[] args)
         {
 
-            double xA, xB, xC, yA, yB, yC;
+            CalculoTriangulo x, y; 
+
+            x = new CalculoTriangulo();
+            y = new CalculoTriangulo();    
 
             Console.WriteLine("Entre com as medidas do triângulo X: ");
 
-            xA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            xB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double p = (xA + xB + xC) / 2;
-            double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
+            double areaX = x.Area(); // utilizando métodos
 
 
             Console.WriteLine("Entre com as medidas do triângulo Y: ");
 
-            yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            p = (yA + yB + yC) / 2;
-            double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC));
+            double areaY = y.Area();
+
 
             Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
             Console.WriteLine("Área de X = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
@@ -45,10 +48,10 @@ namespace Course.Modulo2
             }
             else
             {
-                Console.WriteLine("Triângulos Iguais! ");
-                Console.WriteLine("Area Triângulo X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
-                Console.WriteLine("Area Triângulo Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
-                Console.WriteLine("Fim do progama!");
+                Console.WriteLine("Triângulos Iguais!");
+                Console.WriteLine("Área Triângulo X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+                Console.WriteLine("Área Triângulo Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+                Console.WriteLine("Fim do Programa!");
 
             }
         } 

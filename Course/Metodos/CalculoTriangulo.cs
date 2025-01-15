@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Course.Metodos
+namespace Course.Modulo2.ClassesDosExercícios
 {
     public class CalculoTriangulo
     {

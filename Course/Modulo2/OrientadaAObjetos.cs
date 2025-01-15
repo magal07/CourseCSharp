@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
-using Course.Metodos;
+//using Course.Metodos;
+using Course.Modulo2.ClassesDosExercícios;
 namespace Course.Modulo2
 {
     class OrientadaAObjetos
     {
-        static void Main(string[] args)
+        static void CalculoTriangulo(string[] args)
         {
 
             CalculoTriangulo x, y; 

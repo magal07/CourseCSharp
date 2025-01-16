@@ -18,6 +18,16 @@ namespace Course.Modulo2.ClassesDosExercícios
             return Price * Quantity;
         }
 
+        public void AdicionarProdutos(int quantity)
+        {
+            Quantity += quantity;
+        }
+
+        public void RemoverProdutos(int quantity)
+        {
+            Quantity -= quantity;
+        }
+
         public override string ToString()
         {
             return Name

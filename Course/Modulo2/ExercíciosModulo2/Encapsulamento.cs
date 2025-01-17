@@ -10,7 +10,7 @@ namespace Course.Modulo2.ExercíciosModulo2
 {
     public class Encapsulamento
     {
-        static void Main(string[] args)
+        static void EncapsulamentoEstudo(string[] args)
 
         {
             Product p = new Product("TV", 500.00, 10);

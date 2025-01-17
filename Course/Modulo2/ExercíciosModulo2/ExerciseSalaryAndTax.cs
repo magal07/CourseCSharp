@@ -10,7 +10,7 @@ namespace Course.Modulo2.ExercíciosModulo2
     public class ExerciseSalaryAndTax
     {
 
-        static void ExercicioSalarioEImposto(string[] args)
+        static void ExerciseTaxAndSalary(string[] args)
         {
             Funcionario f = new Funcionario(); // Puxando atributos de funcionarios da classe (Funcionario);
 

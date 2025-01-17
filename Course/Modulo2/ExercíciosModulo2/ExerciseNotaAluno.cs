@@ -1,18 +1,13 @@
 ﻿using Course.Modulo2.ClassesEMetodosDosExercícios;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Globalization;
 
 namespace Course.Modulo2.ExercíciosModulo2
 {
     public class ExerciseNotaAluno
     {
-        static void Main(string[] args)
+        static void ExerciseAlunoNota (string[] args)
         {
-            Aluno aluno = new Aluno();
+            Aluno aluno = new Aluno(); // puxando alunos das classes
 
             Console.Write("Nome do aluno: ");
             aluno.Nome = Console.ReadLine();

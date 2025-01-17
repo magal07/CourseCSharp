@@ -10,22 +10,29 @@ namespace Course.Modulo2.ExercíciosModulo2
 {
     public class ExerciseProduct
     {
-      static void ExerciseProductStock(string[] args) 
+      static void ProductExercise(string[] args) 
 
         {
-            Product p = new Product();
-
             Console.WriteLine("Entre com os dados do produto: ");
             Console.Write("Nome: ");
-            p.Name = Console.ReadLine();
+            string name = Console.ReadLine();
             Console.Write("Preço: ");
-            p.Price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Quantidade no estoque: ");
-            p.Quantity = int.Parse(Console.ReadLine());
+            double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            
+            Product p = new Product();
+
+            Product p2 = new Product();
+            /*
+            Product p3 = new Product { 
+                
+                GetName = "TV",
+                Price = 500.00, 
+                Quantity = 20 };
+                */ 
 
             Console.WriteLine();
 
-            Console.WriteLine("Dados do produto: " + p);
+            Console.WriteLine("Dados do produto: " + p2);
 
 
             Console.WriteLine();
@@ -40,7 +47,7 @@ namespace Course.Modulo2.ExercíciosModulo2
             int rem = int.Parse(Console.ReadLine());
             p.RemoverProdutos(rem);
             Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
+            Console.WriteLine("Dados atualizados: " + p); 
         }
 
 

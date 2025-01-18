@@ -27,9 +27,22 @@ namespace Course.Modulo2.ClassesEMetodosDosExercícios
         public DadosBancarios(int numeroConta, string titularConta, double depositoInicial) : this(numeroConta, titularConta)
         {
             Deposito(depositoInicial);
+            while (depositoInicial <= 0)
+            {
+                Console.Write("Você precisa digitar um valor maior que 0 para o primeiro depósito: R$ ");
+                depositoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            }
+            Console.WriteLine();
+            Deposito(depositoInicial); Console.WriteLine("Parabéns pelo seu primeiro depósito :)");
+
         }
 
-        public void Deposito(double quantia)
+
+
+
+
+
+public void Deposito(double quantia)
         {
             Saldo += quantia;
         }

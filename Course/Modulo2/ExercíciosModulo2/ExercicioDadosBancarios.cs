@@ -17,7 +17,7 @@ namespace Course.Modulo2.ExercíciosModulo2
             Console.Write("Haverá depósito inicial (s/n) : ");
             char resp = char.Parse(Console.ReadLine());
             {
-                if(resp == 's' || resp == 'S')
+                if(resp == 's' || resp == 'S' || resp == 'y' || resp == 'Y')
                 {
                     Console.Write("Entre o valor de depósito inicial: ");
                     double depositoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -33,20 +33,25 @@ namespace Course.Modulo2.ExercíciosModulo2
             Console.WriteLine("Dados da conta:");
             Console.Write(conta);
             Console.WriteLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Entre um valor para depósito: ");
+            Console.Write("Entre um valor para depósito: ");
             double quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             conta.Deposito(quantia);
+            Console.WriteLine();
             Console.WriteLine("Dados atualizados: ");
             Console.WriteLine(conta);
 
+            Console.WriteLine();
 
-            Console.WriteLine("Entre um valor para saque: ");
+            Console.Write("Entre um valor para saque: ");
             quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             conta.Saque(quantia);
+            Console.WriteLine();
             Console.WriteLine("Dados atualizados: ");
             Console.WriteLine(conta);
-
+            Console.WriteLine();
+            Console.WriteLine("Para efetuar novas transações, retorne ao início do programa.");
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Course.Modulo2.ExercíciosModulo2
 {
     internal class ExercicioDadosBancarios
     {
-        static void Main(string[] args)
+        static void ExerciseBankAccount(string[] args)
         {
             DadosBancarios conta;
 

@@ -36,12 +36,6 @@ namespace Course.Modulo2.ClassesEMetodosDosExercícios
             Deposito(depositoInicial); Console.WriteLine("Parabéns pelo seu primeiro depósito :)");
 
         }
-
-
-
-
-
-
 public void Deposito(double quantia)
         {
             Saldo += quantia;

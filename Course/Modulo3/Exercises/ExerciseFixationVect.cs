@@ -9,7 +9,7 @@ namespace Course.Modulo3.Exercises
 {
     class ExerciseFixationVectRooms
     {
-        static void Main(string[] args)
+        static void RoomRented(string[] args)
         {
 
             Student[] vect = new Student[10];

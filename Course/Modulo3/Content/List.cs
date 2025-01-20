@@ -8,7 +8,7 @@ namespace Course.Modulo3.Content
 {
     internal class List
     {
-        static void Main(string[] args)
+        static void Lists(string[] args)
         {
             List<string> list = new List<string>(); // Criando uma lista vazia 
 

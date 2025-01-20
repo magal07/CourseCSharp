@@ -9,7 +9,7 @@ namespace Course.Modulo3.Content
 {
     internal class Triple
     {
-        static void Main(string[] args)
+        static void Triplo(string[] args)
         {
 
             // exemplo de ref

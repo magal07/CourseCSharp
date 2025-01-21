@@ -10,7 +10,7 @@ namespace Course.Modulo3.Exercises
 {
     internal class RegisterEmployees
     {
-        static void Main(string[] args)
+        static void EmployeesRegistered(string[] args)
         {
             Console.Write("How many employees will be registered: ");
             int n = int.Parse(Console.ReadLine());

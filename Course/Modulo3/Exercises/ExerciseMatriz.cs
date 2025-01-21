@@ -8,12 +8,12 @@ namespace Course.Modulo3.Exercises
 {
     internal class ExerciseMatriz
     {
-        static void Main(string[] args)
+        static void MatrizExercise(string[] args)
         {
            int n = int.Parse(Console.ReadLine());
 
             int[,] mat = new int[n, n];
-
+            
             for (int i =0; i < n; i++)
             {
                 string[] values = Console.ReadLine().Split(' ');

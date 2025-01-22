@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Modulo3\Methods\" />
+    <Folder Include="ModuloDeEstudo\Modulo3\Methods\" />
   </ItemGroup>
 
 </Project>

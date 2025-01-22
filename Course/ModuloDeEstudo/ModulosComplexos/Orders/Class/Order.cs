@@ -1,6 +1,4 @@
-﻿using Course.Entities.Enums;
-
-namespace Course.Entities
+﻿namespace Course.ModuloDeEstudo.ModulosComplexos.Orders.Class
 {
     internal class Order
     {

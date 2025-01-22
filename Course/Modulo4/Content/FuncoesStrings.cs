@@ -8,7 +8,7 @@ namespace Course.Modulo4.Sintaxes
 {
     internal class FuncoesStrings
     {
-        static void Main(string[] args)
+        static void StringsFunction(string[] args)
         {
 
             // funções do string : 

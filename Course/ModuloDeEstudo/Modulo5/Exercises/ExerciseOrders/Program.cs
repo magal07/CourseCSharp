@@ -6,7 +6,7 @@ namespace Course.ModuloDeEstudo.ModulosComplexos.Exercises.ExerciseOrders
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void ProgramOrderProduction(string[] args)
 
         {
             Console.WriteLine("Enter client data: ");

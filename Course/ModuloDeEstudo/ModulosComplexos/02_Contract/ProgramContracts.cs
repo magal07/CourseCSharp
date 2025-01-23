@@ -5,9 +5,9 @@ using System.Globalization;
 
 namespace Course
 {
-    class Program
+    class ProgramContracts
     {
-        static void Main(string[] args)
+        static void ContractProgram(string[] args)
         {
             Console.Write("Enter department's name: ");
             string deptName = Console.ReadLine();

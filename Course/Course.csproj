@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="ModuloDeEstudo\Modulo3\Methods\" />
-    <Folder Include="00_MODELO\Entities\Enum\" />
     <Folder Include="ModuloDeEstudo\Modulo5\03_PostComment\Entities\Enum\" />
     <Folder Include="ModuloDeEstudo\Modulo6\AccountBussinesHeranca\Entities\Enum\" />
   </ItemGroup>

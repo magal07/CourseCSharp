@@ -7,7 +7,7 @@ namespace Course.ModuloDeEstudo.Modulo6.OutsourcedEmployeed
     internal class Program
     {
 
-        static void Main(string[] args)
+        static void ContentEmployeesAndOutSourced(string[] args)
         {
             List<Employee> list = new List<Employee>();
 

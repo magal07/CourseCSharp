@@ -17,9 +17,9 @@ namespace Course.ModuloDeEstudo.Modulo6.AccountBussines.Entities
             Balance = balance;
         }
 
-        public void WithDraw(double amount) // WithDraw = Saldo - Amount = quantia
+        public virtual void WithDraw(double amount) // WithDraw = Saldo - Amount = quantia  Virtual = método pode ser sobrescrito/sobreposto
         {
-            Balance -= amount;
+            Balance -= amount + 5.0;
         }
 
         public void Deposit(double amount)

@@ -22,5 +22,11 @@ namespace Course.ModuloDeEstudo.Modulo6.AccountBussines.Entities
         {
             Balance += Balance * InterestRate;
         }
+
+        public override void WithDraw(double amount)
+        { // base, reaproveitar construtores ou pra chamar métodos comuns de superclasses
+            base.WithDraw(amount); // efetuar o saque descontando 5 reais
+            Balance -= 2.0; // retirar além do saque comum de 5 reais , - 2 reais.
+        }
     }
 }

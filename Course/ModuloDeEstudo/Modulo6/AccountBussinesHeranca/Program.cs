@@ -9,7 +9,7 @@ namespace Course.ModuloDeEstudo.Modulo6.AccountBussines
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void AccountBusinessHeranca(string[] args)
         {
             Account acc1 = new Account(1000, "Alex", 500.0);
             Account acc2 = new SavingsAccount(1002, "Ana", 500.0, 0.01);

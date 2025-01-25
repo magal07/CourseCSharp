@@ -8,13 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ModuloDeEstudo\Modulo6\AccountBussines\Entities\Enum\**" />
+    <EmbeddedResource Remove="ModuloDeEstudo\Modulo6\AccountBussines\Entities\Enum\**" />
+    <None Remove="ModuloDeEstudo\Modulo6\AccountBussines\Entities\Enum\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Globalization" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ModuloDeEstudo\Modulo3\Methods\" />
     <Folder Include="ModuloDeEstudo\Modulo5\03_PostComment\Entities\Enum\" />
-    <Folder Include="ModuloDeEstudo\Modulo6\AccountBussinesHeranca\Entities\Enum\" />
   </ItemGroup>
 
 </Project>

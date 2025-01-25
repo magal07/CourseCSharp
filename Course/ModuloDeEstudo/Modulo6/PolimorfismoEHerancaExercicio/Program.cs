@@ -7,7 +7,7 @@ namespace Course.ModuloDeEstudo.Modulo6.PolimorfismoEHerancaExercicio
     internal class Program
     {
 
-        static void Main(string[] args)
+        static void ExerciseHeranceEPolymorphism(string[] args)
         {
             List<Product> list = new List<Product>();
 

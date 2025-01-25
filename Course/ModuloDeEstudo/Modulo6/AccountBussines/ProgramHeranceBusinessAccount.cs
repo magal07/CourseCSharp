@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Course.ModuloDeEstudo.Modulo6.AccountBussines
 {
-    internal class Program
+    internal class ProgramHeranceBusinessAccount
     {
         static void AccountBusinessHeranca(string[] args)
         {

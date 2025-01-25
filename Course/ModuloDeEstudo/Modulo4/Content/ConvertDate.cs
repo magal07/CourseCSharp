@@ -49,5 +49,7 @@ namespace Course.ModulosDeEstudo.Modulo4.Content
             Console.WriteLine(d2.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")); // primeiro garanta que ela esta no horário universal antes de converter 
 
         }
+
+
     }
 }

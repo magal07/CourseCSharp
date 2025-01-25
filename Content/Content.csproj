@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <Folder Include="Modulos\Modulo3\Methods\" />
+    <Folder Include="Modulos\Modulo5\03_PostComment\Entities\Enum\" />
   </ItemGroup>
 
 </Project>

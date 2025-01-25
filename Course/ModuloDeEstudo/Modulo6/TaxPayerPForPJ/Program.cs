@@ -11,7 +11,7 @@ namespace Course.ModuloDeEstudo.Modulo6.TaxPayerPForPJ
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void ExerciseProgam(string[] args)
         {
             List<TaxPayer> list = new List<TaxPayer>();
 

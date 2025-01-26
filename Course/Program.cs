@@ -1,13 +1,10 @@
-﻿using System;
+﻿using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Globalization;
 using Course.Entities;
-using System.Security.AccessControl;
-using Course.Exceptions;
-
+using Course.Services;
 
 namespace Course
 {
@@ -15,32 +12,27 @@ namespace Course
     {
         static void Main(string[] args)
         {
-                Console.WriteLine("Enter account data");
-                Console.Write("Number: ");
-                int numberAccount = int.Parse(Console.ReadLine());
-                Console.Write("Holder: ");
-                string holderAccount = Console.ReadLine();
-                Console.Write("Initial balance: ");
-                double balanceAccount = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                Console.Write("Withdraw limit: ");
-                double withdrawLimitAccount = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Enter rental data");
+            Console.Write("Car model: ");
+            string model = Console.ReadLine();
+            Console.Write("Pickup (dd/MM/yyyy hh:mm): ");
+            DateTime start = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
+            Console.Write("Return (dd/MM/yyyy hh:mm): ");
+            DateTime finish = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
 
-                Account acc = new Account(numberAccount, holderAccount, balanceAccount, withdrawLimitAccount);
+            Console.Write("Enter price per hour: ");
+            double hour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Enter price per day: ");
+            double day = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                Console.WriteLine();
-                Console.Write("Enter amount for withdraw: ");
-                double amount = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            CarRental carRental = new CarRental(start, finish, new Vehicle(model));
 
-            try 
-            {
-                acc.Withdraw(amount);
-            }
+            RentalService rentalService = new RentalService(hour, day, new BrazilTaxService());
 
-            catch (DomainException e) {
+            rentalService.ProcessInvoice(carRental);
 
-                Console.Write("Withdraw error: " + e.Message);
-            }
+            Console.WriteLine("INVOICE:");
+            Console.Write(carRental.Invoice);
         }
-
     }
 }

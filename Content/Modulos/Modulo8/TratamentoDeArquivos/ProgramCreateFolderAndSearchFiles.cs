@@ -9,7 +9,7 @@ namespace Course
 {
     internal class ProgramCreateFolderAndSearchFiles
     {
-        static void Main(string[] args)
+        static void ProgramCreatFolder(string[] args)
         {
             string path = @"c:\temp\myfolder";
 

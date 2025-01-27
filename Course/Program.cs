@@ -1,38 +1,70 @@
-﻿using System.Globalization;
-using System.Collections.Generic;
+﻿using System;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Course.Entities;
-using Course.Services;
 
-namespace Course
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        string diretorioRaiz = @"C:\Temp\CRV_01";
+
+        // Verifica se a pasta raiz existe
+        if (!Directory.Exists(diretorioRaiz))
         {
-            Console.WriteLine("Enter rental data");
-            Console.Write("Car model: ");
-            string model = Console.ReadLine();
-            Console.Write("Pickup (dd/MM/yyyy hh:mm): ");
-            DateTime start = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
-            Console.Write("Return (dd/MM/yyyy hh:mm): ");
-            DateTime finish = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
-
-            Console.Write("Enter price per hour: ");
-            double hour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Enter price per day: ");
-            double day = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-            CarRental carRental = new CarRental(start, finish, new Vehicle(model));
-
-            RentalService rentalService = new RentalService(hour, day, new BrazilTaxService());
-
-            rentalService.ProcessInvoice(carRental);
-
-            Console.WriteLine("INVOICE:");
-            Console.Write(carRental.Invoice);
+            Console.WriteLine("A pasta raiz não foi encontrada. Verifique o caminho.");
+            return;
         }
+
+        Console.WriteLine($"🔍 Buscando LOTEs em: {diretorioRaiz}");
+
+        // Percorre cada LOTE-XXXXX dentro do diretório raiz
+        foreach (string lote in Directory.EnumerateDirectories(diretorioRaiz, "LOTE-*"))
+        {
+            Console.WriteLine($"\n📂 Processando pasta LOTE: {lote}");
+            string pasta00 = Path.Combine(lote, "00");
+
+            if (Directory.Exists(pasta00))
+            {
+                Console.WriteLine($"   📁 Encontrada pasta 00 dentro de {lote}");
+
+                foreach (string subpasta in Directory.EnumerateDirectories(pasta00))
+                {
+                    Console.WriteLine($"      🔍 Verificando subpasta: {subpasta}");
+
+                    // Obtém arquivos .JPG e .TIF (independente de maiúsculas e minúsculas)
+                    var arquivos = Directory.EnumerateFiles(subpasta)
+                        .Where(f => f.EndsWith(".JPG", StringComparison.OrdinalIgnoreCase) ||
+                                    f.EndsWith(".TIF", StringComparison.OrdinalIgnoreCase))
+                        .ToList();
+
+                    if (!arquivos.Any())
+                    {
+                        Console.WriteLine($"      ⚠ Nenhum arquivo .JPG ou .TIF encontrado em {subpasta}");
+                    }
+
+                    foreach (string arquivo in arquivos)
+                    {
+                        string nomeArquivo = Path.GetFileName(arquivo);
+                        string destino = Path.Combine(lote, nomeArquivo);
+
+                        try
+                        {
+                            File.Move(arquivo, destino, true); // Mover (sobrescrevendo se necessário)
+                            Console.WriteLine($"      ✅ Movido: {arquivo} → {destino}");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"      ❌ Erro ao mover {arquivo}: {ex.Message}");
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine($"   ❌ A pasta '00' não foi encontrada em {lote}");
+            }
+        }
+
+        Console.WriteLine("\n🚀 Transferência concluída. Chupa Léo");
     }
 }

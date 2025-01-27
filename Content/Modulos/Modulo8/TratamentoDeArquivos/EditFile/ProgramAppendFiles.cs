@@ -5,7 +5,7 @@ using System.IO; // Biblioteca necessária para manipulação de arquivos
 
 namespace Course
 {
-    class Program
+    class ProgramAppendFiles
     {
         static void AppendFiles(string[] args)
         {

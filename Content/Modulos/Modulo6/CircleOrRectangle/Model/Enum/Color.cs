@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Course.ModuloDeEstudo.Modulo6.CircleOrRectangle.Entities.Enum
+namespace Course.Model.Enum
 {
-     enum Color : int
+    enum Color : int
     {
         Black,
         Blue,

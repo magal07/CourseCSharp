@@ -1,20 +1,28 @@
-﻿using Course.ModuloDeEstudo.Modulo6.CircleOrRectangle.Entities.Enum;
+﻿using Course.Entities;
+using System.Globalization;
 
 namespace Course.ModuloDeEstudo.Modulo6.CircleOrRectangle.Entities
 {
-    internal class Rectangle : Shape
+    internal class Rectangle : AbstractShape
     {
         public double Width { get; set; }
         public double Height { get; set; }
 
-        public Rectangle(double width, double height,Color color) : base(color) 
-        {
-            Width = width;
-            Height = height;
-        }
         public override double Area()
         {
-          return Width * Height;
+            return Width * Height;
+        }
+        public override string ToString()
+        {
+            return "Rectangle color = "
+                    + Color
+                    + ", width = "
+                    + Width.ToString("F2", CultureInfo.InvariantCulture)
+                    + ", height = "
+                    + Height.ToString("F2", CultureInfo.InvariantCulture)
+                    + ", area = "
+                    + Area().ToString("F2", CultureInfo.InvariantCulture);
+
         }
     }
 }

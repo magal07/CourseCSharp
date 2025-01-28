@@ -10,7 +10,6 @@
   <ItemGroup>
     <Folder Include="Modulos\Modulo3\Methods\" />
     <Folder Include="Modulos\Modulo5\03_PostComment\Entities\Enum\" />
-    <Folder Include="Modulos\Modulo8\TratamentoDeArquivos\MoveImage\" />
   </ItemGroup>
 
 </Project>

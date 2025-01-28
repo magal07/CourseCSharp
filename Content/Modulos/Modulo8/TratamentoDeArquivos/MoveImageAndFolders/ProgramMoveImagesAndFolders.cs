@@ -2,9 +2,9 @@
 using System.IO;
 using System.Linq;
 
-class Program
+class ProgramMoveImagesAndFolders
 {
-    static void Main()
+    static void MoveImagesScanAdvanced()
     {
         string diretorioRaiz = @"C:\Temp\CRV_01";
 

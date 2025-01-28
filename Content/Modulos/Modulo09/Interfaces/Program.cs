@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Course;
 
-internal class Program
+internal class ProgramPaypal
 {
     static void InterfacePrintScan(string[] args)
     {

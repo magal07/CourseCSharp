@@ -9,7 +9,7 @@ namespace Course
 {
     internal class ProgramIComparable
     {
-        static void Main(string[] args)
+        static void IComparableProgram(string[] args)
         {
 
             string path = @"c:\temp\in.txt";

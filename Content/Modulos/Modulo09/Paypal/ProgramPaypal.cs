@@ -5,7 +5,7 @@ using Course.Services; // Importa os serviços do projeto
 
 namespace Course
 {
-    class Program
+    class Progam
     {
         static void ContractServices(string[] args)
         {

@@ -12,4 +12,8 @@
     <Folder Include="Modulos\Modulo05\03_PostComment\Entities\Enum\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Modulos\Modulo10\EqualsAndGetHashCode\ProgramEqualsAndGetHashCode.cs" />
+  </ItemGroup>
+
 </Project>

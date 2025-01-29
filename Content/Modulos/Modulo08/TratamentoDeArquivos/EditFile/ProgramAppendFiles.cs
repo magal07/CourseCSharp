@@ -1,4 +1,5 @@
-﻿using Course.Entities; // Importa a classe Product do namespace Course.Entities
+﻿using Content.Modulos.Modulo10.ComparcaoGetHashCode.Entities;
+using Course.Entities; // Importa a classe Product do namespace Course.Entities
 using System;
 using System.Globalization;
 using System.IO; // Biblioteca necessária para manipulação de arquivos

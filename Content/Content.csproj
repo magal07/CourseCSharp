@@ -10,7 +10,6 @@
   <ItemGroup>
     <Folder Include="Modulos\Modulo03\Methods\" />
     <Folder Include="Modulos\Modulo05\03_PostComment\Entities\Enum\" />
-    <Folder Include="Modulos\Modulo12\Delegate\" />
   </ItemGroup>
 
   <ItemGroup>
